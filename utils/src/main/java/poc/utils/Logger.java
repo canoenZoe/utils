@@ -22,7 +22,7 @@ public class Logger {
 	}
 	
 	private void send(String level, String msg){
-		if (levels.get(logLevel)<=levels.get(level))
+		if (levels.get(logLevel)>=levels.get(level))
 			System.out.println(level+" "+classname+" : "+msg);
 	}
 	
